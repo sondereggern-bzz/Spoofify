@@ -1,0 +1,108 @@
+:root {
+  --primary-color: #1cd761;
+  --secondary-color: #b7facf;
+  --text-color: #000000;
+  --alternative-text-color: #ffffff;
+  font-size: 16px;
+  --background-color: #000000;
+}
+header {
+  height: 5rem;
+}
+html{
+  background-color: black;
+}
+body {
+  max-width: 52rem;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  padding: 30px 30px 0 30px;
+  box-shadow: 0 0 0px 20px var(--primary-color);
+  font-family: Arial;
+}
+.brand {
+  font-size: 2em;
+  margin: 5px;
+  padding-top: 10px;
+}
+nav {
+   display: flex;
+   flex-flow: row;
+   justify-content: space-between;
+   align-items: center;
+   padding-right: 0px;
+   padding-left: 0px;
+   padding-top: 10px;
+  float: right
+ }
+nav a {
+  border-radius: 3rem;
+  padding: 30px 10%;
+  border: 2px;
+  text-decoration: none;
+  color: var(--alternative-text-color);
+}
+footer {
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 2rem;
+  background-color: transparent;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+}
+grid img {
+  width: 10rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1rem;
+  margin: 5px;
+  margin-top: 30px;
+
+}
+.grid-item {
+  width: 15rem;
+  transition: all 0.2s;
+  background-color: transparent;
+}
+.grid-item:hover {
+  box-shadow: 10px 10px 10px;
+}
+.headerNav{
+  position: relative;
+  width: auto;
+  right: 10px;
+  color: white;
+  padding: 0.6rem;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 3rem;
+  text-decoration: none;
+  align-content: center;
+}
+.container {
+  background-color: var(--background-color); /* Set the background color to black */
+  color: var(--text-color); /* Set text color to white */
+  padding: 15px;
+  max-width: 52rem;
+}
+.cover {
+  transition: all 0.2s;
+}
+.cover:hover {
+  box-shadow: 10px 10px 10px;
+  transform: rotate(10deg);
+
+}
+.play {
+  transition: all 0.2s;
+  background-color: #1cd761;
+}
+.play:hover {
+  box-shadow: 10px 10px 10px;
+  transform: scale(1.5)
+}
