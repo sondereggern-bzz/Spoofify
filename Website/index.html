@@ -23,42 +23,31 @@
     <p>welcome to Spoofify, the rip-off music streaming service of ICT module 291!</p>
     <p class="headerNav"> <b>Now Playing:</b> <span id="playing"></span></p>
     <h3 id="a2">Top of your Birthweek</h3>
+
+    <audio id="audio"></audio>
+
     <ol>
-      <li><button type="button" style="background-color: #1cd761; border: none" id="A" class="play"><b>"Jump"</b> by Kriss Joss</button></li>
-      <li><button type="button" style="background-color: #1cd761; border: none" id="B" class="play"><b> "My lovin (You're never gonna get it)"</b> by En Vogue</button></li>
+      <li><button type="button" style="background-color: #1cd761; border: none" id="A" class="play" onclick="playsong1()"><b>Song 1</b></button></li>
+      <li><button type="button" style="background-color: #1cd761; border: none" id="B" class="play"><b> "My lovin (You're never gonna get it)"</b> by En Vogue</button>
       <li><button type="button" style="background-color: #1cd761; border: none" id="C" class="play"><b> "Bohemian Rapsody"</b> by Queen</button></li>
       <li><button type="button" style="background-color: #1cd761; border: none" id="D" class="play"><b> "Save the best for last"</b> by Vanessa Williams</button></li>
       <li><button type="button" style="background-color: #1cd761; border: none" id="E" class="play"><b> "Live and learn"</b> by Joe Public</button></li>
     </ol>
     <h3>Latest releases randomized</h3>
     <div class="grid-container" style="text-align: center">
-      <button type="button" id="1" class="play" style="background-color: transparent; border: none"><img src="https://loremflickr.com/cache/resized/1446_25474655094_3811324454_480_480_nofilter.jpg" alt="c" class="grid-item"></button>
-      <button type="button" id="2" class="play" style="background-color: transparent; border: none"><img src="https://loremflickr.com/cache/resized/defaultImage.small_480_480_nofilter.jpg" alt="ca" class="grid-item"></button>
-      <button type="button" id="3" class="play" style="background-color: transparent; border: none"><img src="https://loremflickr.com/cache/resized/65535_52721268996_bbb562f10b_c_480_480_nofilter.jpg" alt="cab" class="grid-item"></button>
-      <button type="button" id="4" class="play" style="background-color: transparent; border: none"><img src="https://loremflickr.com/cache/resized/4199_35345049626_fb1eb7040c_h_480_480_nofilter.jpg" alt="cabc" class="grid-item"></button>
-      <button type="button" id="5" class="play" style="background-color: transparent; border: none"><img src="https://loremflickr.com/cache/resized/65535_52721755773_a3055930d4_c_480_480_nofilter.jpg" alt="cabcd" class="grid-item"></button>
-      <button type="button" id="6" class="play" style="background-color: transparent; border: none"><img src="https://loremflickr.com/cache/resized/7583_15208305503_a6470ccf53_480_480_nofilter.jpg" alt="cabcde" class="grid-item"></button>
+      <button type="button" id="1" class="play" style="background-color: transparent; border: none"><img src="https://loremflickr.com/480/480/cd,album,cover?random=1" alt="c" class="grid-item"></button>
+      <button type="button" id="2" class="play" style="background-color: transparent; border: none"><img src="https://loremflickr.com/480/480/cd,album,cover?random=2" alt="ca" class="grid-item"></button>
+      <button type="button" id="3" class="play" style="background-color: transparent; border: none"><img src="https://loremflickr.com/480/480/cd,album,cover?random=3" alt="cab" class="grid-item"></button>
+      <button type="button" id="4" class="play" style="background-color: transparent; border: none"><img src="https://loremflickr.com/480/480/cd,album,cover?random=4" alt="cabc" class="grid-item"></button>
+      <button type="button" id="5" class="play" style="background-color: transparent; border: none"><img src="https://loremflickr.com/480/480/cd,album,cover?random=5" alt="cabcd" class="grid-item"></button>
+      <button type="button" id="6" class="play" style="background-color: transparent; border: none"><img src="https://loremflickr.com/480/480/cd,album,cover?random=6" alt="cabcde" class="grid-item"></button>
     </div>
     <footer>
       <p><b>© 2024 Spoofify</b></p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 
-  <script>
-
-      const newSong = document.createElement("li");
-      newSong.innerHTML = '<button type="button" style="border: none" id="F" class="play"><b> "Live and die"</b> by Joe Public</button>';
-      document.querySelector("ol").appendChild(newSong);
-      const newSong2 = document.createElement("li");
-      newSong2.innerHTML = '<button type="button" style="border: none" id="G" class="play"><b> "Something"</b> by Weezer</button>';
-      document.querySelector("ol").appendChild(newSong2);
-
-      document.querySelectorAll(".play").forEach(item => {
-          item.addEventListener("click", event => {
-              document.getElementById("playing").innerText = event.currentTarget.innerText;
-          })
-      })
-
-  </script>
 </html>
 
